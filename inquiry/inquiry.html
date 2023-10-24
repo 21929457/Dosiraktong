@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/initial.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>도시락으로 다 통한다, 해외데이터는 도시락통</title>
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <div class="go-to-top xi-long-arrow-up"><a href="#" class="go-to-top-link"></a></div>
+        <header class="header">
+            <div class="header-inner">
+                <div class="logo"><a href="../index.html"></a></div>
+                <div class="header-gnb">
+                    <ul class="gnb">
+                        <li class="gnb-menu"><a href="../About us/about.html" class="gnb-link"><p class="gnb-text">ABOUT US</p></a></li>
+                        <li class="gnb-menu"><a href="./inquiry.html" class="gnb-link"><p class="gnb-text">제휴문의</p></a></li>
+                        <li class="gnb-menu"><a href="../members/members.html" class="gnb-link"><p class="gnb-text">도시락멤버스</p></a></li>
+                        <li class="gnb-menu"><a href="https://www.wifidosirak.com/v3/index.aspx?utm_source=tong&utm_medium=menu&utm_campaign=brand" class="gnb-link" target="_blank"><p class="gnb-text">와이파이도시락</p></a></li>
+                        <li class="gnb-menu"><a href="https://dosiraksim.com/?utm_source=tong&utm_medium=menu&utm_campaign=brand" class="gnb-link" target="_blank"><p class="gnb-text">도시락유심</p></a></li>
+                        <li class="gnb-menu"><a href="https://dosirakesim.com/?utm_source=tong&utm_medium=menu&utm_campaign=brand" class="gnb-link" target="_blank"><p class="gnb-text">도시락eSIM</p></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="inq-banner">
+            <div class="inner">
+                <div class="inq-banner-text-wrap">
+                    <p class="inq-banner-title">제휴문의</p>
+                    <p class="inq-banner-desc">함께할 수 있는 다양한 제안을 기다립니다.</p>
+                </div>
+                <div class="inq-banner-img-wrap">
+                    <img class="inq-banner-img" src="../image/inquiry_banner-img.png">
+                </div>
+            </div>
+        </section>
+        <section class="insert-info">
+            <div class="inner">
+                <form action="">
+                    <div class="comp-info-wrap">
+                        <label type="text" class="comp-name-label" for="insert-comp-name">회사(담당자)명</label>
+                        <input type="text" class="insert-comp-info" id="insert-comp-name">
+                    </div>
+                    <div class="comp-info-wrap">
+                        <label type="text" class="comp-tel-label" for="insert-comp-tel">연락처</label>
+                        <input type="text" class="insert-comp-info" id="insert-comp-tel" placeholder="'-'을 제외한 숫자만 입력">
+                    </div>
+                    <div class="comp-info-wrap">
+                        <label type="text" class="comp-email-label" for="email-1">이메일</label>
+                        <div class="input-box">
+                            <input type="text" id="email-1" class="insert-comp-info" name="insert-comp-email1">
+                            <input type="text" id="email-2" class="insert-comp-info">
+                            <button class="select-DNS">직접입력</button>
+                            <ul class="email-dropdown-menu">
+                                <li class="dns"><a href="#" data-option="직접입력">직접입력</a></li>
+                                <li class="dns"><a href="#" data-option="naver.com">naver.com</a></li>
+                                <li class="dns"><a href="#" data-option="gmail.com">gmail.com</a></li>
+                                <li class="dns"><a href="#" data-option="nate.com">nate.com</a></li>
+                                <li class="dns"><a href="#" data-option="kakao.com">kakao.com</a></li>
+                                <li class="dns"><a href="#" data-option="daum.net">daum.net</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <div class="comp-info-wrap">
+                        <label type="text" class="comp-type-label" for="insert-comp-type">문의유형</label>
+                        <button id="insert-comp-type" class="insert-comp-type-view">
+                            <ul class="info-dropdown-menu">
+                                <li class="info-inner"><a href="#" data-option="first-op">제휴문의</a></li>
+                                <li class="info-inner"><a href="#" data-option="second-op">광고/마케팅</a></li>
+                                <li class="info-inner"><a href="#" data-option="third-op">법인고객문의</a></li>
+                                <li class="info-inner"><a href="#" data-option="fourth-op">총판/대리점문의</a></li>
+                                <li class="info-inner"><a href="#" data-option="fifth-op">기타문의</a></li>
+                            </ul>
+                        </button>
+                    </div>
+                    <div class="comp-info-wrap">
+                        <label type="text" class="comp-content-label" for="insert-content">내용</label>
+                        <input type="text" id="insert-content" class="insert-comp-info">
+                    </div>
+                    <div class="comp-info-wrap">
+                        <label type="text" class="comp-content-label" for="insert-comp-content">개인정보 수집 이용동의</label>
+                        <div class="check-info-wrap">
+                            <textarea id="check-info" readonly>
+1.수집 주체 : (주)와이드모바일 
+2.수집 목적 : 제휴제안 접수 및 처리결과 회신
+3.수집 항목 : 담당자명, 이메일, 연락처
+4.보유 기간 : 문의 상담 완료 후 즉시 폐기
+                            </textarea>
+                        </div>
+                        <div class="policy-wrap">
+                            <div class="policy-inner">
+                                <input type="checkbox" id="policy-ck">
+                                <label id="policy-ck-bg" for="policy-ck">개인정보 수집에 동의합니다.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">등록하기</button>
+                </form>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="inner">
+                <ul class="company-info">
+                    <li class="info-detail">상호 : ㈜와이드모바일</li>
+                    <li class="info-detail">대표 : 김만중</li>
+                    <li class="info-detail">통신판매업신고번호 : 제2018-서울서대문-0301호</li>
+                    <li class="info-detail">사업자등록번호 : 121-81-66458</li>
+                </ul>
+                <p class="call">고객센터 : <a class="call-num" href="tel:1566-9070">1566-9070 </a> (운영시간 9:00~18:00, 주말/공휴일/점심 12:00~13:00 제외)</p>
+                <p class="copyright">Copyright © WIDEMOBILE INC. Allright Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
