@@ -34,7 +34,7 @@
 <br/>
 
 <p><b>도시락통 링크입니다.👇 유사도를 확인할 수 있습니다.</b></p>
-[도시락통 링크] https://www.modevi.co.kr/front/main](https://dosiraktong.com/Main/Index
+[도시락통 링크] https://dosiraktong.com/Main/Index
 
 <br/>
 <br/>
