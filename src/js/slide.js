@@ -14,7 +14,14 @@ var main = new Swiper(".main" , {
 })
 let pagination = $('.main .pagination li');
 let btn = $('section.banner-section .inner .banner-link');
+let pagination_num = $('.pagination li span');
+let pagination_num_length = Object.keys(pagination_num).length - 2;
 
+for(let i = 0; i < pagination_num_length; i++) {
+    pagination_num.eq(i).click(function(){
+        main.slideToLoop(i,1300,false);
+    })    
+}
 pagination.eq(0).addClass('active');
 btn.eq(0).addClass('hide')
 
