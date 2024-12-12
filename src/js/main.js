@@ -21,7 +21,7 @@ $(function(){
             }
         });
     });
-    $('.go-to-top a').click(function(e){
+    $('.go-to-top-link').click(function(e){
 
         $('html , body').stop();
         $('html , body').animate({scrollTop : 0} , 1000);
