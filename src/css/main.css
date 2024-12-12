@@ -96,7 +96,6 @@ section.banner-section .main ul li img{
     color: rgba(255, 255, 255, .3);
     transition: .5s;
 }
-/* 페이지네이션 공사중 ================================ */
 .pagination {
     display: flex;
     margin-top: 90px;
@@ -134,7 +133,6 @@ section.banner-section .main ul li img{
     width: 100%;
     transition: all 4.5s;
 }
-/* ==================================================== */
 .inner .main-service-title {
     margin-bottom: 30px;
     font-size: 38px;

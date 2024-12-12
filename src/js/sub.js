@@ -16,14 +16,13 @@ $(function(){
         $('section').each(function(i){
             var secOff = $(this).offset();
             var startPoint = 150;
-            var secIndex = i;
 
             if(secOff.top - startPoint <= scrTop && scrTop <= secOff.top + winH) {
                 $(this).addClass('active');
             }
         });
     });
-    $('.go-to-top a').click(function(e){
+    $('.go-to-top-link').click(function(e){
 
         $('html , body').stop();
         $('html , body').animate({scrollTop : 0} , 1000);
