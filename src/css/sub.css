@@ -599,39 +599,44 @@
     border-radius: 50%;
     background-color: white;
     opacity: 0;
+    animation-name: circle-mv;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 .member-type-wrap li:nth-of-type(1) {
-    animation-name: circle-mv;
     animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
 }
 .member-type-wrap li:nth-of-type(2) {
-    animation-name: circle-mv;
     animation-duration: 1.2s;
-    animation-delay: 3.2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
 }
 .member-type-wrap li:nth-of-type(3) {
-    animation-name: circle-mv;
     animation-duration: 1.2s;
-    animation-delay: 3.4s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 .img-wrap {
     width: 577px;
     height: 578px;
 }
 .img-wrap img:nth-of-type(1) {
-    transform: translateX(159px)
+    animation-name: hand-mv;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: .6s;
+    opacity: 0;
+    transform: translate(159px , 500px);
 }
 .img-wrap img:nth-of-type(2) {
     position: absolute;
     right: -135px;
     top: -70px;
+    opacity: 0;
+    animation-name: effect-mv;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 .circle-wrap {
     position: absolute;
@@ -648,24 +653,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transform: scale(0);
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 .circle-wrap li:nth-of-type(1) {
     width: 1000px;
     height: 1000px;
     background-color: #f5f7fb;
-    animation-name: visual-circle-mv;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+    animation-name: visual-circle-mv1;
+    animation-delay: .4s;
 }
 .circle-wrap li:nth-of-type(2) {
     width: 820px;
     height: 820px;
     background-color: #ebf0f7;
+    animation-name: visual-circle-mv2;
+    animation-delay: .2s;
 }
 .circle-wrap li:nth-of-type(3) {
     width: 640px;
     height: 640px;
     background-color: #e2e9f3;
+    animation-name: visual-circle-mv3;
 }
 /* ====================================== */
