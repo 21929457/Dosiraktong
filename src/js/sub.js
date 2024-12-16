@@ -2,8 +2,14 @@ $(function(){
     $(window).scroll(function(){
         var scrTop = $(this).scrollTop();
         var winH = $(this).height();
-        var startPoint = 150;
+        let innerHeight = $(this).innerHeight();
+        let scrollHeight = $('body').prop('scrollHeight');
 
+        if(innerHeight + scrTop >= scrollHeight) {
+            $('.go-to-top').css('bottom' , '210px');
+        } else {
+            $('.go-to-top').css('bottom' , '60px');
+        }
         if(scrTop > 50 ) {
             $('header').addClass('active');
             $('.logo img').attr('src' , '../image/icon/logo.png');
@@ -21,6 +27,14 @@ $(function(){
                 $(this).addClass('active');
             }
         });
+        if(scrTop >= 1260) {
+            $('.member-type-wrap li').css('animation-name' , 'circle-mv');
+            $('.img-wrap img').eq(0).css('animation-name' , 'hand-mv');
+            $('.img-wrap img').eq(1).css('animation-name' , 'effect-mv');
+            $('.circle-wrap li').eq(0).css('animation-name' , 'visual-circle-mv1');
+            $('.circle-wrap li').eq(1).css('animation-name' , 'visual-circle-mv2');
+            $('.circle-wrap li').eq(2).css('animation-name' , 'visual-circle-mv3');
+        }
     });
     $('.go-to-top-link').click(function(e){
 

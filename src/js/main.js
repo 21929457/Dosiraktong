@@ -2,7 +2,14 @@ $(function(){
     $(window).scroll(function(){
         var scrTop = $(this).scrollTop();
         var winH = $(this).height();
+        let innerHeight = $(this).innerHeight();
+        let scrollHeight = $('body').prop('scrollHeight');
 
+        if(innerHeight + scrTop >= scrollHeight) {
+            $('.go-to-top').css('bottom' , '210px');
+        } else {
+            $('.go-to-top').css('bottom' , '60px');
+        }
         if(scrTop > 50 ) {
             $('header').addClass('active');
             $('.logo img').attr('src' , './src/image/icon/logo.png');
