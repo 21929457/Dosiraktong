@@ -536,17 +536,38 @@
     background-color: #9bddfe;
     border-radius: 20px;
     font-size: 100%;
+}.bene-banner:nth-child(2) .bene-img-wrap {
+    background-color: #f4c0cc;    
 }
+.bene-banner:nth-child(3) .bene-img-wrap {
+    background-color: #d8bbef;    
+}
+.bene-banner-title {
+    margin: 28px 0 18px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.bene-banner-desc {
+    font-size: 16px;
+    opacity: .8;
+    line-height: 1.3;
+}
+/* ================공사중=================== */
 .point-section {
-    padding: 120px 0;
+    padding-top: 120px;
+    overflow: hidden;
+}
+.point-section .inner {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100%;
 }
 .point-title {
-    width: 360px;
-    font-size: 42px;
-    text-align: center;
+    min-width: 360px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.45;
-    margin: 0 auto;
     margin-bottom: 50px;
 }
 .highlight {
@@ -564,142 +585,87 @@
     background-color: #e2e9fa;
     z-index: -1;
 }
-.bene-banner:nth-child(2) .bene-img-wrap {
-    background-color: #f4c0cc;    
-}
-.bene-banner:nth-child(3) .bene-img-wrap {
-    background-color: #d8bbef;    
-}
-.bene-banner-title {
-    margin: 28px 0 18px;
-    font-size: 22px;
-    font-weight: 500;
-}
-.bene-banner-desc {
-    font-size: 16px;
-    opacity: .8;
-    line-height: 1.3;
-}
 .member-type-wrap {
     display: flex;
-    justify-content: center;
+    gap: 10px;
 }
-.member-type {
+.member-type-wrap li {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 40px rgba(58, 104, 178, 0.2);
     border-radius: 50%;
-    margin-right: 10px;
-    box-shadow: 5px 5px 40px rgb(58, 104, 178, .2);
+    background-color: white;
     opacity: 0;
-    transform: translateY(150px);
 }
-section.point-section.active .member-type:nth-child(1){
-    animation-name: circle-mv1;
-    animation-duration: .5s;
+.member-type-wrap li:nth-of-type(1) {
+    animation-name: circle-mv;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+.member-type-wrap li:nth-of-type(2) {
+    animation-name: circle-mv;
+    animation-duration: 1.2s;
+    animation-delay: 3.2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-section.point-section.active .member-type:nth-child(2){
-    animation-name: circle-mv2;
-    animation-duration: .5s;
-    animation-delay: .25s;
+.member-type-wrap li:nth-of-type(3) {
+    animation-name: circle-mv;
+    animation-duration: 1.2s;
+    animation-delay: 3.4s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-section.point-section.active .member-type:nth-child(3){
-    animation-name: circle-mv3;
-    animation-duration: .5s;
-    animation-delay: .5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+.img-wrap {
+    width: 577px;
+    height: 578px;
 }
-.mem-visual {
-    position: relative;
+.img-wrap img:nth-of-type(1) {
+    transform: translateX(159px)
 }
-.mem-visual .inner {
-    overflow: hidden;
+.img-wrap img:nth-of-type(2) {
+    position: absolute;
+    right: -135px;
+    top: -70px;
 }
 .circle-wrap {
-    display: flex;
-    position: relative;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    bottom: -252px;
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    bottom: -500px;
+    right: -370px;
+    z-index: -10;
 }
-.circle-wrap li {
+.circle-wrap li  {
     position: absolute;
     border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: scale(0);
 }
-.circle-1 {
-    width:  0px;
-    height: 0px;
+.circle-wrap li:nth-of-type(1) {
+    width: 1000px;
+    height: 1000px;
     background-color: #f5f7fb;
+    animation-name: visual-circle-mv;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
-.circle-2 {
-    width:  0px;
-    height: 0px;
+.circle-wrap li:nth-of-type(2) {
+    width: 820px;
+    height: 820px;
     background-color: #ebf0f7;
 }
-.circle-3 {
-    width:  0px;
-    height: 0px;
+.circle-wrap li:nth-of-type(3) {
+    width: 640px;
+    height: 640px;
     background-color: #e2e9f3;
 }
-section.point-section.active ~ section.mem-visual .circle-wrap .circle-1 {
-    animation-name: visual-circle-mv1;
-    animation-duration: .5s;
-    animation-delay: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-section.point-section.active ~ section.mem-visual .circle-wrap .circle-2 {
-    animation-name: visual-circle-mv2;
-    animation-duration: .5s;
-    animation-delay: 1.25s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-section.point-section.active ~ section.mem-visual .circle-wrap .circle-3 {
-    animation-name: visual-circle-mv3;
-    animation-duration: .5s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-.mem-visual-img-wrap {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-}
-.mem-visual-effect , .mem-visual-hand{
-    position: absolute;
-    opacity: 0;
-    transform: translateY(500px);
-}
-.mem-visual-hand {
-    left: calc(50% - 164px);
-    bottom: -50px;
-}
-.mem-visual-effect {
-    left: calc(50% - 319px);
-    bottom: 37px;
-}
-section.point-section.active ~ section.mem-visual .mem-visual-hand {
-    animation-name: hand-mv;
-    animation-duration: 1.5s;
-    animation-delay: 2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-section.point-section.active ~ section.mem-visual .mem-visual-effect {
-    animation-name: effect-mv;
-    animation-duration: 1.5s;
-    animation-delay: 2.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
+/* ====================================== */
