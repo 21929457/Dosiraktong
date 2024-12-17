@@ -161,7 +161,7 @@
 }
 .graph-wrap.active .graph-cover {
     animation-name: gradient-mv;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
 }
 .ab-service-content .inner {
